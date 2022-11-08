@@ -47,25 +47,53 @@
     <div class="row">
 
         <div class="column">
-            <h1>Header</h1>
-            <p>some text goes here</p>
+            <div class="header">
+                <h1>Heat</h1>
+                <p>Convert from celsius to fahrenheit</p>
+            </div>
+            <div class="container">
+                <label for="celsius">Celsius</label>
+                <input type="number" id="celsius" oninput="convertToFahrenheit()">
+            </div>
+            <div class="container">
+                <label for="fahrenheit">Fahrenheit</label>
+                <input type="number" id="fahrenheit" oninput="convertToCelsius()">
+            </div>
         </div>
 
         <div class="column">
-            <h1>Header</h1>
-            <p>some text goes here</p>
+            <div class="header">
+                <h1>Time</h1>
+                <p>Convert from minutes to hours</p>
+            </div>
+            <div class="container">
+                <label for="minute">Minutes</label>
+                <input type="number" id="minute" oninput="convertToHours()">
+            </div>
+            <div class="container">
+                <label for="hour">Hours</label>
+                <input type="number" id="hour" oninput="convertToMinutes()">
+            </div>
         </div>
 
         <div class="column">
-            <h1>Header</h1>
-            <p>some text goes here</p>
+            <div class="header">
+                <h1>Weight</h1>
+                <p>Convert from kilograms to pounds</p>
+            </div>
+            <div class="container">
+                <label for="kilogram">Kilograms</label>
+                <input type="number" id="kilogram" oninput="convertToPound()">
+            </div>
+            <div class="container">
+                <label for="pound">Pounds</label>
+                <input type="number" id="pound" oninput="convertToKilogram()">
+            </div>
         </div>
 
     </div>
 
-    <script src="logic/temperature.js"></script>
-    <script src="logic/weight.js"></script>
-    <script src="logic/length.js"></script>
+    <script src="logic/conversion.js"></script>
     
 </body>
 </html>
