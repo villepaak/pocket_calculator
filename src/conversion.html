@@ -42,56 +42,173 @@
 
     <hr>
 
+    <!-- UNIT CONVERTER -->
+
     <h1>Unit Converter</h1>
+
+    <!-- 1st Row-->
 
     <div class="row">
 
-        <div class="column">
+        <div class="column"> <!-- Temperature Converter -->
+
             <div class="header">
-                <h1>Heat</h1>
+
+                <h1>Temperature</h1>
                 <p>Convert from celsius to fahrenheit</p>
+
             </div>
-            <div class="container">
+
+            <div class="container"> <!-- Container for CELSIUS -->
+
                 <label for="celsius">Celsius</label>
                 <input type="number" id="celsius" oninput="convertToFahrenheit()">
+
             </div>
-            <div class="container">
+
+            <div class="container"> <!-- Container for FAHRENHEIT-->
+
                 <label for="fahrenheit">Fahrenheit</label>
                 <input type="number" id="fahrenheit" oninput="convertToCelsius()">
+
             </div>
+
         </div>
 
-        <div class="column">
+        <div class="column"> <!-- Time Converter -->
+
             <div class="header">
+
                 <h1>Time</h1>
                 <p>Convert from minutes to hours</p>
+
             </div>
-            <div class="container">
+
+            <div class="container"> <!-- Container for MINUTES -->
+
                 <label for="minute">Minutes</label>
                 <input type="number" id="minute" oninput="convertToHours()">
+
             </div>
-            <div class="container">
+
+            <div class="container"> <!-- Container for HOURS -->
+
                 <label for="hour">Hours</label>
                 <input type="number" id="hour" oninput="convertToMinutes()">
+
             </div>
+
         </div>
 
-        <div class="column">
-            <div class="header">
+        <div class="column"> <!-- Weight Converter -->
+
+            <div class="header"> 
+
                 <h1>Weight</h1>
                 <p>Convert from kilograms to pounds</p>
+
             </div>
-            <div class="container">
+
+            <div class="container"> <!-- Container for KILOGRAM -->
+
                 <label for="kilogram">Kilograms</label>
                 <input type="number" id="kilogram" oninput="convertToPound()">
+
             </div>
-            <div class="container">
+
+            <div class="container"> <!-- Container for POUNDS --> 
+
                 <label for="pound">Pounds</label>
                 <input type="number" id="pound" oninput="convertToKilogram()">
+
             </div>
+
         </div>
 
     </div>
+
+    <!-- 2nd ROW -->
+
+    <div class="row">
+
+        <div class="column"> <!-- Data Size Converter -->
+
+            <div class="header">
+
+                <h1>Data</h1>
+                <p>From kilobytes (kb) to megabytes (mb)</p>
+
+            </div>
+
+            <div class="container"> <!-- Container for Kilobyte -->
+
+                <label for="kilobyte">KB</label>
+                <input type="number" id="kilobyte" oninput="convertToMegabyte()">
+
+            </div>
+
+            <div class="container"> <!-- Container for Megabyte-->
+
+                <label for="megabyte">MB</label>
+                <input type="number" id="megabyte" oninput="convertToKilobyte()">
+
+            </div>
+
+        </div>
+
+        <div class="column"> <!-- Length Converter -->
+
+            <div class="header">
+
+                <h1>Length</h1>
+                <p>From inches to centimeter</p>
+
+            </div>
+
+            <div class="container"> <!-- Container for CENTIMETER -->
+
+                <label for="centimeter">Centimeter</label>
+                <input type="number" id="centimeter" oninput="convertToInches()">
+
+            </div>
+
+            <div class="container"> <!-- Container for INCHES -->
+
+                <label for="inches">Inches</label>
+                <input type="number" id="inches" oninput="convertToCentimeter()">
+
+            </div>
+
+        </div>
+
+        <div class="column"> <!-- Speed Converter -->
+
+            <div class="header"> 
+
+                <h1>Speed</h1>
+                <p>Convert from km/h to m/s</p>
+
+            </div>
+
+            <div class="container"> <!-- Container for km/h -->
+
+                <label for="kmInHour">km/h</label>
+                <input type="number" id="kmInHour" oninput="convertToMeterInSecond()">
+
+            </div>
+
+            <div class="container"> <!-- Container for m/s --> 
+
+                <label for="meterInSecond">m/s</label>
+                <input type="number" id="meterInSecond" oninput="convertToKmInHour()">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- SCRIPT -->
 
     <script src="logic/conversion.js"></script>
     

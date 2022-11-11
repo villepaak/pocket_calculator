@@ -1,4 +1,4 @@
-// Got all necessary DOM elements from html to javascript variables
+// Got all the necessary DOM elements from html to javascript variables
 
 const display = document.querySelector("#display");
 const buttons = document.querySelectorAll("button");
@@ -8,7 +8,7 @@ const calculator = document.querySelector(".calculator");
 
 // Toggle State
 
-let isToggled = true;
+let isToggled = false;
 
 // Iterating over each button in the calculator
 
@@ -56,6 +56,6 @@ themeToggle.onclick = () => {
 
     calculator.classList.toggle("dark");
     themeToggle.classList.toggle("active");
-    isToggled = false;
+    isToggled = true;
 
 }

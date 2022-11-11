@@ -13,11 +13,14 @@
     <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
-    <!-- GOOGLE FONT -->
+    <!-- GOOGLE API's -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
 
     <!-- EXTERNAL FILES -->
 
@@ -30,7 +33,7 @@
 
     <!-- NAVIGATION -->
 
-    <ul class="navigation">
+    <ul class="navigation"> 
 
         <li><a href="index.html">Home</a></li>
         <li><a href="calculator.html">Simple Calculator</a></li>
@@ -42,35 +45,50 @@
 
     <hr>
 
-    <div class="content-container">
+    <!-- CURRENCY CONVERTER -->
 
-        <h1>Currency Converter</h1>
+    <div class="convertor-container">
 
         <div class="container">
 
-            <div class="input-container">
+            <h1>Currency Converter</h1>
 
-                <select name="currency" id="currency"></select>
-                <input type="number" name="input" id="input">
+            <div class="rate"> <!-- DISPLAYS CURRENCY -->
 
-            </div>
-
-            <div class="output-container">
-
-                <select name="currency" id="currency"></select>
-                <input type="number" name="output" id="output-container" disabled>
+                <div class="first-rate"></div> 
+                <div class="second-rate"></div>
 
             </div>
 
-            <button class="convert-btn" id="convertButton">Convert</button>
+            <div class="content-container">
+
+                <div class="initial"> <!-- USER INPUT -->
+
+                    <div class="options"><select name="" id=""></select></div>
+                    <div class="input"><input type="number"></div>
+
+                </div>
+
+                <span class="material-icons swap">swap_horiz</span> <!-- GOOGLE SWAP ICON -->
+
+                <div class="target"> <!-- OUTPUT -->
+
+                    <div class="options"><select name="" id=""></select></div>
+                    <div class="input"><input disabled type="number"></div>
+
+                </div>
+
+            </div>
+
+            <!-- BUTTON FOR CONVERTING -->
+
+            <button class="result">Convert</button>
 
         </div>
 
-        
-
     </div>
 
-
+    <!-- SCRIPT -->
 
     <script src="logic/currency_conversion.js"></script>
     
